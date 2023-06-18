@@ -1,0 +1,11 @@
+{
+  "name": "projet4-ohmyfood",
+  "version": "1.0.0",
+  "description": "site internet plate-forme Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "author": "Laurent De La Calle",
+  "license": "ISC"
+}
