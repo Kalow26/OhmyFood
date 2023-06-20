@@ -1,0 +1,74 @@
+@use "../abstracts/" as *;
+
+.loader {
+  @include flex(center, center);
+  width: 100vw;
+  height: 100vh;
+
+  &__content {
+    position: relative;
+  }
+
+  &__circle img {
+    width: 200px;
+    height: 200px;
+  }
+
+  &__logo img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    animation: spin 10s forwards;
+  }
+
+  &__bar {
+    margin-top: 25px;
+    height: 5px;
+    background: linear-gradient(217deg, $pink, $light_green 70.71%),
+      linear-gradient(127deg, $dark_green, $dark_green 70.71%),
+      linear-gradient(336deg, $purple, $pink 70.71%);
+    animation: loadingBar 10s forwards;
+  }
+}
+
+@keyframes loadingBar {
+  0% {
+    width: 0%;
+  }
+
+  20% {
+    width: 30%;
+  }
+
+  50% {
+    width: 60%;
+  }
+
+  80% {
+    width: 90%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  30% {
+    transform: rotate(360deg) scale(0.4);
+  }
+
+  60% {
+    transform: rotate(720deg) scale(1.3);
+  }
+
+  100% {
+    transform: rotate(1080deg);
+  }
+}

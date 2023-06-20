@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.header {
+    height: 63px;
+    @include flex (center, center);
+    
+    &__img {
+        width: 162px;
+    }
+}

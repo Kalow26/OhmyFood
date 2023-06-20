@@ -1,0 +1,39 @@
+@use "../abstracts/" as *;
+
+.footer {
+    height: 186px;
+    background-color: $dark_gray;
+    padding: 22px 25px;
+
+    &__content {
+
+        &__img {
+            width: 139px;
+            filter: invert(1);
+            margin-bottom: 16px;
+        }
+
+        &__links {
+            @include flex (flex-start, center, column, 7px);
+
+            &--icon a {
+                margin-left: 11px;
+
+            }
+            &--icon .fa-solid {
+                font-size: 14px;
+                width: 11px;
+              
+            }
+
+            &--icon   .fa-handshake-simple {
+                transform: rotate(-45deg);
+            }
+
+
+
+            
+        }
+    }
+
+}

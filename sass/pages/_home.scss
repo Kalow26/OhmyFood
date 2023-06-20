@@ -1,0 +1,47 @@
+@use "../abstracts/" as *;
+
+.location {
+    @include flex (center, center);
+    width: 100%;
+    height: 50px;
+    background-color: $gray;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    .fa-location-dot {
+        font-size: 14px;
+        color: $dark_gray;
+        padding: 2px;
+    }
+
+    input {
+        border: none;
+        text-align: center;
+        color: $dark_gray;
+        width: 115px;
+        background-color: $gray;
+        font-weight: bold;
+        outline: none;
+    }
+}
+
+.hero {
+    background-color: $light_gray;
+    padding: 50px;
+    
+    &__content {
+        @include flex (center, center, column, 27px);
+        text-align: center;
+
+        p {
+            font-weight: 300;
+        }
+    }
+}
+
+.functioning {
+    padding: 50px 20px;
+
+    h2 {
+        margin-bottom: 26px;
+    }
+}

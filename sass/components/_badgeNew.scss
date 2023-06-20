@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+
+.badge__new {
+    width: 80px;
+    height: 29px;
+    position: absolute;
+    background-color: $light_green;
+    @include flex (center, center);
+    @include shadow (0, 2, 4);
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+
+    p {
+        color: $dark_green;
+        font-size: 14px;
+        font-weight: 700;
+        
+    }
+}

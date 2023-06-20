@@ -1,4 +1,3 @@
-//importing custom projects stylesheets
-@import "./base";
-@import "./layout";
-@import "./components";
+@forward "base";
+@forward "components";
+@forward "pages";

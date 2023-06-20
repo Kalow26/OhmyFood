@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+.functioning__cards {
+    @include flex (center, center, column, 25px);
+    margin-left: 10px;
+
+    &__card {
+        width: 100%;
+        background-color: $light_gray;
+        border-radius: 20px;
+        @include shadow (0, 4, 10);
+        height: 72px;
+        @include flex (center, center);
+
+        &__content {
+            @include flex (flex-end, flex-start, row, 27px);
+            position: relative;
+               
+            p {
+                font-weight: 700;
+            }
+
+            .fa-solid {
+                font-size: 20px;
+                color: gray;
+            }
+
+            .purple {
+                color: $purple;
+            }
+
+        }
+
+        &__badge {
+            position: absolute;
+            left: -10px;
+            background-color: $purple;
+            @include flex (center, center);
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+
+            p {
+                color: $white;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+    }
+}
