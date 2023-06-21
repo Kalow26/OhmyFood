@@ -45,3 +45,17 @@
         margin-bottom: 26px;
     }
 }
+
+.restaurants {
+    padding: 50px 20px;
+    background-color: $light_gray;
+
+    h2 {
+        margin-bottom: 26px;
+    }
+
+    &__cards {
+        @include flex (center, center, column, 16px);
+        width: 100%;
+    }
+}
