@@ -9,3 +9,7 @@
 @mixin shadow ($x, $y, $blur) {
     filter : drop-shadow(#{$x}px #{$y}px #{$blur}px rgba(0, 0, 0, 0.2));
 };
+
+@mixin background($num) {
+    
+}

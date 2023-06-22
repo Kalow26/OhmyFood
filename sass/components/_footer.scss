@@ -1,9 +1,11 @@
 @use "../abstracts/" as *;
 
 .footer {
-    height: 186px;
     background-color: $dark_gray;
     padding: 22px 25px;
+    width: 100%;
+ 
+    
 
     &__content {
 

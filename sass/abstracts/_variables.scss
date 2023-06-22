@@ -1,17 +1,37 @@
 // -- colors variables --
 
-$purple : #9356DC;
-$pink : #FF79DA;
-$light_green : #99E2D0;
-$dark_green : #008766;
-$dark_gray : #353535;
-$gray : #EAEAEA;
-$light_gray : #F6F6F6;
-$black : #000000;
-$white : #ffffff;
+$purple: #9356dc;
+$pink: #ff79da;
+$light_green: #99e2d0;
+$dark_green: #008766;
+$dark_gray: #353535;
+$gray: #eaeaea;
+$light_gray: #f6f6f6;
+$black: #000000;
+$white: #ffffff;
 
-// -- fonts variables -- 
+// -- fonts variables --
 
-$roboto : 'Roboto', sans-serif;
-$shrikhand : 'Shrikhand', cursive;
+$roboto: "Roboto", sans-serif;
+$shrikhand: "Shrikhand", cursive;
 
+// -- background pictures for every restaurants
+// insert a restaurant name and a link to the picture
+// the loop creates a new class for each restaurant
+
+$back: (
+  "note": "../../assets/Images/restaurants/note.jpg",
+  "palette": "../../assets/Images/restaurants/palette.jpg",
+  "delice": "../../assets/Images/restaurants/delice.jpg",
+  "francaise": "../../assets/Images/restaurants/francaise.jpg",
+);
+
+@each $name, $url in $back {
+  .restaurant__background-#{$name} {
+    height: 275px;
+    width: 100%;
+    background: url($url);
+    background-position: center;
+    background-size: cover;
+  }
+}
