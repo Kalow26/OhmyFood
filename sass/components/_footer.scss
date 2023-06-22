@@ -13,6 +13,11 @@
             width: 139px;
             filter: invert(1);
             margin-bottom: 16px;
+
+            @include desktop {
+                float: right;
+                margin-right: 50px;
+            }
         }
 
         &__links {
@@ -20,8 +25,8 @@
 
             &--icon a {
                 margin-left: 11px;
-
             }
+
             &--icon .fa-solid {
                 font-size: 14px;
                 width: 11px;
@@ -32,9 +37,23 @@
                 transform: rotate(-45deg);
             }
 
+         @include desktop {
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right: 150px;
+         }
+         
+         li:nth-child(3) {
+            @include desktop {
+                padding-left: 30px;
+            }  
+         } 
+                    
+        }
 
-
-            
+        @include desktop {
+            height: 114px;
+            margin-top: 64px;
         }
     }
 

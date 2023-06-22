@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 // -- colors variables --
 
 $purple: #9356dc;
@@ -14,6 +16,11 @@ $white: #ffffff;
 
 $roboto: "Roboto", sans-serif;
 $shrikhand: "Shrikhand", cursive;
+
+//set the numbers of restaurants in the home page for animation
+$max_rest : 4;
+//set the numbers of menu in the restaurant page for animation
+$max_menu : 10;
 
 // -- background pictures for every restaurants
 // insert a restaurant name and a link to the picture
@@ -33,5 +40,9 @@ $back: (
     background: url($url);
     background-position: center;
     background-size: cover;
+    @include desktop {
+      height: 400px;
+    }
   }
+  
 }

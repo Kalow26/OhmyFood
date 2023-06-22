@@ -3,8 +3,25 @@
 .header {
     height: 63px;
     @include flex (center, center);
-    
-    &__img {
-        width: 162px;
+    width: 100%;
+    position: relative;
+
+    &__backBtn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 23px;
+        a{
+           .fa-arrow-left {
+            font-size: 22px;
+            color: $black;
+        }     
+        }
     }
+
+    @include desktop {
+        height : 93px;
+    }
+    
 }
+

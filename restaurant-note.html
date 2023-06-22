@@ -19,23 +19,27 @@
 
   <body>
     <header class="header">
-      <img
+      <div class="header__backBtn">
+        <a href="/home.html">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+        <img
         src="./assets/Images/logo/ohmyfood@2x.svg"
         alt="logo de l'appli"
-        class="header__img"
-      />
+        />
     </header>
 
     <main>
       <div class="restaurant__background-note"></div>
 
-      <div class="restaurant__section">
+      <div class="restaurant__section desktop__only">
         <section class="restaurant__section__title">
           <h2>La note enchantée</h2>
-          <article class="icon--like">
+          <div class="icon--like">
             <i class="fa-regular fa-heart icon--like--empty"></i>
             <i class="fa-solid fa-heart icon--like--full"></i>
-          </article>
+          </div>
         </section>
 
         <section class="restaurant__section__meals">
@@ -250,7 +254,7 @@
       </div>
 
       <footer class="footer">
-        <section class="footer__content">
+        <div class="footer__content">
           <img
             src="./assets/Images/logo/ohmyfood@2x.svg"
             alt="logo de l'application"
@@ -273,10 +277,10 @@
               <a href="#">Mentions légales</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="mailto:laurentdelacalle@hotmail.com">Contact</a>
             </li>
           </ul>
-        </section>
+        </div>
       </footer>
     </main>
   </body>

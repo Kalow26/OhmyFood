@@ -1,3 +1,6 @@
+//----------- mixins -------------
+
+// create a flex (align-items(required), justify-content(required), direction(by default row if not set), gap(by default 0 if not set)
 @mixin flex ($align, $justify, $direction: row, $gap: 0) {
     display: flex;
     flex-direction: $direction;
@@ -6,10 +9,12 @@
     gap: $gap;
 };
 
+// create a drop shadow (gapX, gapY, blur)
 @mixin shadow ($x, $y, $blur) {
     filter : drop-shadow(#{$x}px #{$y}px #{$blur}px rgba(0, 0, 0, 0.2));
 };
 
-@mixin background($num) {
-    
-}
+//  create a breakpoint for desktop version
+@mixin desktop {
+    @media (min-width: 1440px) { @content; }
+  }

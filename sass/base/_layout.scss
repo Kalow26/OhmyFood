@@ -1,11 +1,15 @@
 @use "../abstracts/" as *;
 
+.desktop__only {
+    @include desktop {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
 // **** Restaurant Page Layout ****
 // use the same structure for every restaurant 
 // you want to create
-
-
-
 
 .restaurant__section {
     
@@ -31,6 +35,11 @@
             font-weight: 700;
             font-family: $shrikhand;
         }
+
+        @include desktop {
+            justify-content: center;
+            gap: 20px;
+        }
     }
 
     &__meals {
@@ -48,5 +57,9 @@
             height: 3px;
             background-color: $light_green;
         }
+    }
+
+    @include desktop {
+        padding: 40px 300px;
     }
 }
