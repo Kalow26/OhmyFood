@@ -20,7 +20,7 @@
     position: absolute;
     top: 20%;
     left: 25%;
-    animation: spin 10s forwards;
+    animation: spin 5s forwards;
   }
 
   &__bar {
@@ -29,7 +29,7 @@
     background: linear-gradient(217deg, $pink, $light_green 70.71%),
       linear-gradient(127deg, $dark_green, $dark_green 70.71%),
       linear-gradient(336deg, $purple, $pink 70.71%);
-    animation: loadingBar 10s forwards;
+    animation: loadingBar 5s forwards;
   }
 }
 
