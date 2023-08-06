@@ -11,6 +11,7 @@
     transform: translateX(-100px);
     opacity: 0;
     animation: fadeIn 2s forwards;
+    cursor: pointer;
     
 
     &__header {
@@ -58,7 +59,7 @@
         }
     }
 
-    &:hover {
+    &:hover, &:focus {
         & > .meal__card__valid {
           margin-right: -16px;
         }
@@ -69,8 +70,8 @@
       }
 
       @for $i from 1 through $max_menu {
-        &:nth-child(#{$i}) {
-            animation-delay: 100ms * $i;
+        &[data-id="#{$i}"] {
+            animation-delay: 150ms * $i;
           }
     }
     

@@ -7,14 +7,12 @@
     color: $white;
     padding: 13px 18px;
     @include shadow (0, 4, 10);
-    transition: all 0.3s;
+    transition: filter 0.3s;
     cursor: pointer;
-    height: 50px;
     font-size: 16px;
-    letter-spacing: 0.5px;
 
     &:hover {
-        filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.45)) brightness(1.1);
+        filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.35)) brightness(1.2);
 
     }
 }
@@ -46,7 +44,7 @@
     transform:scale(1.1);
     transform-origin: center;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
     padding: 5px;
     cursor: pointer;
 

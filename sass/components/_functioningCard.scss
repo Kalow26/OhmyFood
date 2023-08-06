@@ -10,12 +10,13 @@
         background-color: $light_gray;
         border-radius: 20px;
         @include shadow (0, 4, 10);
-        height: 72px;
-        @include flex (center, center);
+        height: 72px; 
+        @include flex (center, flex-start);
 
         &__content {
             @include flex (flex-end, flex-start, row, 27px);
             position: relative;
+            margin-left: 35px;
                
             p {
                 font-weight: 700;

@@ -3,7 +3,6 @@
 .footer {
     background-color: $dark_gray;
     padding: 22px 25px;
-    width: 100%;
  
     
 
@@ -25,22 +24,25 @@
 
             &--icon a {
                 margin-left: 11px;
+                padding-bottom: 1px;
             }
 
             &--icon .fa-solid {
-                font-size: 14px;
+                font-size: 13px;
                 width: 11px;
-              
+                color: $white;
             }
 
-            &--icon   .fa-handshake-simple {
+            &--icon .fa-handshake-simple {
                 transform: rotate(-45deg);
+                font-size: 12px;
             }
 
          @include desktop {
             flex-direction: row;
             justify-content: flex-end;
             padding-right: 150px;
+            align-items: center;
          }
          
          li:nth-child(3) {
