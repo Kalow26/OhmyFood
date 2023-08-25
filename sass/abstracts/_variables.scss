@@ -27,10 +27,10 @@ $max_menu : 10;
 // the loop creates a new class for each restaurant
 
 $back: (
-  "note": "/assets/Images/restaurants/note.jpg",
-  "palette": "/assets/Images/restaurants/palette.jpg",
-  "delice": "/assets/Images/restaurants/delice.jpg",
-  "francaise": "/assets/Images/restaurants/francaise.jpg",
+  "note": "./assets/Images/restaurants/note.jpg",
+  "palette": "./assets/Images/restaurants/palette.jpg",
+  "delice": "./assets/Images/restaurants/delice.jpg",
+  "francaise": "./assets/Images/restaurants/francaise.jpg",
 );
 
 @each $name, $url in $back {
