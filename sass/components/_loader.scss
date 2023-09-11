@@ -8,7 +8,6 @@
   @include flex(center, center);
   animation: fadeInOut 3s forwards;
   
-
   &__content {
     position: relative;
   }
@@ -40,7 +39,7 @@
 
 @keyframes fadeInOut {
   0%,80% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   
   100% {
